@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
     const menuBtn = document.getElementById('menu-btn')
     const menuIcon = document.getElementById('menu-icon')
-    const MenuLinks = document.getElementById('menu-links')
+    const menuLinks = document.getElementById('menu-links')
 
-    if(menuBtn && menuIcon && MenuLinks){
+    if(menuBtn && menuIcon && menuLinks){
         menuBtn.addEventListener('click', () => {
-            MenuLinks.classList.toggle('hidden')
-            MenuLinks.classList.toggle('flex')
+            menuLinks.classList.toggle('hidden')
+            menuLinks.classList.toggle('flex')
 
             if(MenuLinks.classList.contains('hidden')){
                 menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16')
@@ -15,12 +15,12 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         })
 
-        const individualLink = MenuLinks.querySelectorAll('a')
+        const individualLink = menuLinks.querySelectorAll('a')
         individualLink.forEach(link => {
             link.addEventListener('click', () => {
                 if(window.innerWidth < 768){
-                    MenuLinks.classList.add('hidden')
-                    MenuLinks.classList.remove('flex')
+                    menuLinks.classList.add('hidden')
+                    menuLinks.classList.remove('flex')
                     menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16')
                 }
             })
