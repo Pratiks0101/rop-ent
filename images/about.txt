@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Alike Angular
+- Font Author: undefined
+- Font Source: https://fonts.gstatic.com/s/alikeangular/v26/3qTrojWunjGQtEBlIcwMbSoI3kM6bB7FKjE.ttf
+- Font License: undefined)
